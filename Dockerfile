@@ -8,10 +8,10 @@ WORKDIR /app
 COPY target/spring-boot-todoo-app-0.0.1-SNAPSHOT.jar /app/spring-boot-todoo-app.jar
 
 # Copy the downloaded Lumigo OpenTelemetry JAR into the container at /app
-COPY lumigo-opentelemetry-0.7.0.jar /app/lumigo-opentelemetry-0.7.0.jar
+#COPY lumigo-opentelemetry-0.7.0.jar /app/lumigo-opentelemetry-0.7.0.jar
 
-# Set JAVA_TOOL_OPTIONS
-ENV JAVA_TOOL_OPTIONS="-javaagent:/app/lumigo-opentelemetry-0.7.0.jar"
+# Set JAVA_TOOL_OPTIONS for the Lumigo OpenTelmetry JAR
+#ENV JAVA_TOOL_OPTIONS="-javaagent:/app/lumigo-opentelemetry-0.7.0.jar"
 
 # Expose port 8080 to the outside world
 EXPOSE 8080
