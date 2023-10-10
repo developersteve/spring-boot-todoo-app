@@ -13,7 +13,7 @@ This Java Springboot Todoo app is built using Spring Data JPA, H2 Database and a
 
 CLI into the root directory and then run `mvn spring-boot:run`
 
-Open a browser and then run (localhost:8080)[http://localhost:8080]
+Open a browser and then run [localhost:8080](http://localhost:8080)
 
 ### Run in a container
 
